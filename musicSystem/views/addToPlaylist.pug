@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= 'Playlist'
+    each playlist in playlists  
+        form#registerForm()
+            p Name: #{playlist.playlist_name} 
+            p Duration: #{playlist.total_duration}
+            p No Of Songs: #{playlist.no_of_songs}
+            

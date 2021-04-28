@@ -1,0 +1,25 @@
+extends layout
+ 
+block content
+    form#registerForm(method='POST' action='http://localhost:3000/musicSystem/addSong')
+        h1= 'Add Songs'
+        div
+            label(for='sName') Name:
+            input#sName(type='text',name='sName')
+        div
+            label(for='sGenre') Genre:
+            input#sGenre(type='text',name='sGenre')
+        div
+            label(for='sDuration') Duration (in minutes):
+            input#sDuration(type='number',name='sDuration')
+        div
+            label(for='sAlbum') Album Name:
+            input#sAlbum(type='text',name='sAlbum')
+        div
+            label(for='sReleaseYear') Release Year:
+            input#sReleaseYear(type='number',name='sReleaseYear')
+        div
+            label(for='sArtistId') Artist ID:
+            input#sArtistId(type='text',name='sArtistId')
+        div
+            button(type='submit') Add Song

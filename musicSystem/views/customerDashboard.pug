@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  
+  form#registerForm()
+    h1 Customer Dashboard
+  
+    a(href="http://localhost:3000/musicSystem/customerViewProfile?cust_id="+v.cust_id)
+        button(type="button") View Profile
+ 
+    a(href="http://localhost:3000/musicSystem/customerViewSongs?cust_id="+v.cust_id) 
+        button(type="button") Songs
+ 
+    a(href="http://localhost:3000/musicSystem/customerPlaylistsPage?cust_id="+v.cust_id) 
+        button(type="button") Playlists
+    
+

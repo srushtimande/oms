@@ -1,0 +1,19 @@
+extends layout
+ 
+block content
+    form#registerForm(method='POST' action='http://localhost:3000/musicSystem/createProfile')
+        h1= 'Registration Page'
+        div
+            label(for='name') Name:
+            input#name(type='text',name='name')
+        div
+            label(for='emailId') Email:
+            input#emailId(type='email',name='emailId')
+        div
+            label(for='phoneNo') Phone:
+            input#phoneNo(type='number',name='phoneNo')
+        div
+            label(for='password') Password:
+            input#password(type='password',name='password')
+        div
+            button(type='submit') Sign Up

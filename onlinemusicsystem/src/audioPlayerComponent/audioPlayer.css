@@ -1,0 +1,93 @@
+audio{
+    width: 70%;
+    margin-top: 10%;
+    background: transparent;
+}
+.player{
+    background-image: linear-gradient(to bottom right, rgb(129, 129, 236), rgb(146, 0, 146));
+    padding: 3%;
+    border-radius: 2%;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.control{
+    padding: 5%;
+    color: white;
+    margin: 1%;
+    border-radius: 50% 50% 50% 50%;
+    background: transparent;
+}
+p{
+    color: white;
+}
+i{
+    margin-right: 3%;
+    padding: 5%;
+    width: 10%;
+    color: white;
+}
+i:hover{
+    cursor: pointer;
+    color: #18F2FE;
+}
+.song{
+    font-size: 20px;
+}
+
+.artist{
+    font-size: 17px;
+}
+
+.banner-play{
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+}
+.banner-pause{
+    border-radius: 50%;
+    animation:  spin 5s linear infinite;
+    animation-play-state: paused;
+}
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 10px;
+    width: 95%;
+    margin-left: 2%;
+  }
+  
+  .progress-value {
+    animation: load 150s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 20%;
+    width: 0;
+  }
+
+  .progress-value-stop{
+    animation: none;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 20%;
+    width: 0; 
+  }
+
+.progress:hover{
+    cursor: pointer;
+}
+.progress:hover .progress-value{
+    background: #18F2FE;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }

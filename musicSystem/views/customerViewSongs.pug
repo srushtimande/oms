@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1= 'Songs'
+    each song in res1  
+        form#registerForm()
+            p Song ID: #{song.song_id} 
+            p Name: #{song.song_name} 
+            p Genre: #{song.genre}
+            p Duration: #{song.song_duration}
+            p Album Name: #{song.album_name}
+            p Release Year: #{song.release_date}
+            p Artist ID: #{song.artist_id}
+            p Playlist ID: #{song.playlist_id_fr}
+            a(href="http://localhost:3000/musicSystem/ReviewPlaylist?cust_id="+v+"&song_duration="+song.song_duration)  
+                button(type="button") Add to Playlist
+        br
+        br

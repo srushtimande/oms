@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form#registerForm()
+    h1 Manage Songs
+
+    a(href="http://localhost:3000/musicSystem/adminViewSongs") 
+      button(type="button") View Songs
+ 
+    a(href="http://localhost:3000/musicSystem/adminAddSongs") 
+      button(type="button") Add Songs
+
+    a(href="http://localhost:3000/musicSystem/adminDeleteSongs") 
+      button(type="button") Delete Songs
+  //- add playlist for updation on songs table

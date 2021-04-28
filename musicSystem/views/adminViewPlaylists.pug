@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= 'Playlists'
+    each playlist in res1  
+        form#registerForm()
+            p Playlist ID: #{playlist.playlist_id} 
+            p Name: #{playlist.playlist_name} 
+            p Total Duration: #{playlist.total_duration}
+            p Number of songs: #{playlist.no_of_songs}
+            p Created By: #{playlist.created_by_fr}
+        br
+        br
+        br

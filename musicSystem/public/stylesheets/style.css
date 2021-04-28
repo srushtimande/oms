@@ -1,0 +1,208 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: black;
+  background-image: url("../images/mic2.jpeg");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  color: white;
+}
+
+/*rgba(244, 241, 187)*/
+#label{
+  width: 103%;
+  margin-left: -1%;
+  margin-top: 1%;
+  padding: 1%;
+  background-image: linear-gradient(to right, rgb(237, 106, 80), rgba(244, 241, 187, 0.678));
+}
+
+#label marquee{
+  font-size: 20px;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#nav{
+  display: inline;
+  text-decoration: none;
+  color: white;
+}
+.menu{
+  margin: -1%;
+  background: transparent;
+  width: 100%;
+  padding: 2%;
+  text-align: right;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+.menuitem{
+  display: inline;
+  font-size: 17px;
+  padding: 2%;
+}
+
+.menuitem:hover{
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  background: rgba(244, 241, 187, 0.678);
+}
+
+#imageArea{
+  margin-top: 0.5%;
+  margin-left: -1%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.content_img{
+  position: relative;
+  float: left;
+  margin-right: 10px;
+ }
+
+ .content_img img{
+  height: 98%;
+  width: 100%;
+  border-radius: 2%;
+ }
+ #arijit{
+   width: 105%;
+ }
+
+ .content_img div{
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  color: white;
+  left: 40%;
+  font-size: 30px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover img{
+  cursor: pointer;
+  opacity: 0.5;
+  box-shadow: 5px 7px rgba(128, 128, 128, 0.562);
+  transition: 0.5s;
+ }
+
+ .content_img:hover div{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+ }
+#secondColumn{
+  grid-gap: 1%;
+  margin-left: 6%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid black;
+}
+
+#logo{
+  margin-right: 73%;
+}
+#logo:hover{
+  background: transparent;
+}
+#registerForm h1{
+  text-align: center;
+}
+
+#registerForm{
+  margin-top: 7%;
+  border: 1px solid white;
+  width: 35%;
+  padding: 2%;
+  margin-left: 7%;
+  background: rgba(0,0,0, 0.4);
+}
+#registerForm input[type="text"]{
+  padding: 2%;
+  background: rgba(255,255,255, 0.1);
+  width: 95%;
+  border-radius: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#registerForm input[type="email"]{
+  padding: 2%;
+  background: rgba(255,255,255, 0.1);
+  width: 95%;
+  border-radius: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#registerForm input[type="number"]{
+  padding: 2%;
+  background: rgba(255,255,255, 0.1);
+  width: 95%;
+  border-radius: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#registerForm input[type="password"]{
+  padding: 2%;
+  background: rgba(255,255,255, 0.1);
+  width: 95%;
+  border-radius: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#registerForm button[type="submit"]{
+  padding: 2%;
+  background: rgba(244, 241, 187, 0.678);
+  width: 50%;
+  border-radius: 2%;
+  margin: 2%;
+  margin-left: 25%;
+}
+
+#registerForm button{
+  padding: 2%;
+  background: rgba(244, 241, 187, 0.678);
+  width: 50%;
+  border-radius: 2%;
+  margin: 2%;
+  margin-left: 25%;
+}
+
+#registerForm input[type="text"]:focus{
+  background: rgba(255,255,255, 0.3);
+}
+
+#registerForm input[type="number"]:focus{
+  background: rgba(255,255,255, 0.3);
+}
+
+#registerForm input[type="email"]:focus{
+  background: rgba(255,255,255, 0.3);
+}
+
+#registerForm input[type="password"]:focus{
+  background: rgba(255,255,255, 0.3);
+}
+
+#registerForm button[type="submit"]:hover{
+  cursor: pointer;
+  background: rgba(244, 241, 187, 0.878);
+}
+
+#registerForm button:hover{
+  cursor: pointer;
+  background: rgba(244, 241, 187, 0.878);
+}

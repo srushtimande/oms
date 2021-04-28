@@ -1,0 +1,13 @@
+extends layout
+ 
+block content
+    form#registerForm(method='POST' action='http://localhost:3000/musicSystem/deletePlaylist')
+        h1= 'Delete Playlist'
+        div
+            label(for='pId') Playlist ID:
+            input#pId(type='text',name='pId')
+        div
+            label(for='pName') Playlist Name:
+            input#pName(type='text',name='pName')
+        div
+            button(type='submit') Delete Playlist

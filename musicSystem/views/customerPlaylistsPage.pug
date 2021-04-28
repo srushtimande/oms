@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  form#registerForm()
+    h1 Manage Playlists
+
+    a(href="http://localhost:3000/musicSystem/adminViewPlaylists") 
+      button(type="button") View Playlist
+
+    a(href="http://localhost:3000/musicSystem/customerCreatePlaylists1?cust_id="+id) 
+      button(type="button") Create Playlist
+
+    a(href="http://localhost:3000/musicSystem/customerDeletePlaylist?cust_id="+id) 
+      button(type="button") Delete Playlist

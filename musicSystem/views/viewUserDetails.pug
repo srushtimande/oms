@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= 'Users'
+    each user in res1
+        form#registerForm()
+            p Name : #{user.cust_name} 
+    
+            p Email ID: #{user.email}
+    
+            p Phone : #{user.phone}

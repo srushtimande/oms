@@ -1,0 +1,13 @@
+extends layout
+ 
+block content
+    form#registerForm(method='POST' action='http://localhost:3000/musicSystem/loginProfile')
+        h1= 'Login Page'
+        div
+            label(for='emailId') Email:
+            input#emailId(type='email',name='emailId')
+        div
+            label(for='password') Password:
+            input#password(type='password',name='password')
+        div
+            button(type='submit') Login 

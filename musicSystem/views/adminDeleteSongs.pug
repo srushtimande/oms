@@ -1,0 +1,13 @@
+extends layout
+ 
+block content
+    form#registerForm(method='POST' action='http://localhost:3000/musicSystem/deleteSong')
+        h1= 'Delete Song'
+        div
+            label(for='sId') Song ID:
+            input#sId(type='text',name='sId')
+        div
+            label(for='sName') Song Name:
+            input#sName(type='text',name='sName')
+        div
+            button(type='submit') Delete Song

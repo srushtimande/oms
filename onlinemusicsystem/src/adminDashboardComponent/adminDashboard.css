@@ -1,0 +1,79 @@
+.card{
+    width:18rem;
+    display:inline-block;
+    margin-left: 5%;
+    background: white;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+.btn:hover{
+    cursor: pointer;
+    background: #11a9b1;
+    transition: 0.2s ease-in;
+}
+
+.btn-danger{
+    background: rgb(185, 0, 0);
+    width: 90%;
+}
+.btn-danger:hover{
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+}
+.btn{
+    background: #18F2FE;
+    width: 100%;
+}
+h1{
+    color: white;
+}
+#formContent{
+    width: 30%;
+}
+#formContent h4{
+    color: black;
+    margin-top: -1%;
+}
+#formContent input[type=text]{
+    padding: 2%;
+}
+.wrapper{
+    margin-top: -1%;    
+}
+.crd{
+    background-image: linear-gradient(to bottom right, rgb(129, 129, 236), rgb(93, 0, 146));
+    width: 20%;
+    display:inline-block;
+    margin: 1%;
+    border-radius: 5%;
+    font-family:'Unna', serif;
+}
+
+input[type=submit]{
+    cursor: pointer;
+}
+.card-text{
+    text-align: left;
+    margin-left: 15%;
+}
+
+.card-body h3{
+    font-size: 22px;
+}
+
+select{
+    width: 90%;
+    padding: 1.7%;
+    background-color: rgba(231, 231, 231, 0.5);
+    border: none;
+}
+select option{
+    width: 90%;
+    padding: 1.7%;
+    background-color: rgba(231, 231, 231, 0.5);
+}
+
+.placeholder{
+    margin-left: 40%;
+    color: rgba(153, 153, 153, 0.26);
+}
